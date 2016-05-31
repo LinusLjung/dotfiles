@@ -1,0 +1,10 @@
+[push]
+	default = simple
+[alias]
+	s = status
+	a = add
+	p = pull --rebase
+	o = checkout
+	b = branch
+	l = log
+	c = commit

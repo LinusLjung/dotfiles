@@ -1,0 +1,10 @@
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.bash_aliases
+fi
+
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
+# Make bash completion work with git alias `g`
+__git_complete g __git_main
