@@ -3,7 +3,8 @@
 [alias]
 	s = status
 	a = add
-	p = pull --rebase
+	pl = pull --rebase
+	ps = push
 	o = checkout
 	b = branch
 	l = log
