@@ -9,3 +9,5 @@
 	b = branch
 	l = log
 	c = commit
+	save = !git add . && git commit -m "Save" --no-verify
+	unsave = "reset HEAD~"
