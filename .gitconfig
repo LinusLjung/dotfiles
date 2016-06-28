@@ -3,6 +3,8 @@
 [user]
         name = Linus Ljung
         email = linus.ljung@na-kd.com
+[pack]
+        windowMemory = 32m
 [alias]
 	s = status
 	a = add
