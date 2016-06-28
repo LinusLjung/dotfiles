@@ -12,6 +12,6 @@
 	b = branch
 	l = log
 	c = commit
-	save = !git add . && git commit -m "Save" --no-verify
+	save = !git add --all . && git commit -m "Save" --no-verify
 	undo = "!f() { git reset HEAD~$1; }; f"
 
