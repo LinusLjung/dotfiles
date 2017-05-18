@@ -1,0 +1,17 @@
+[push]
+	default = simple
+[alias]
+	s = status
+	a = add
+	pl = pull --rebase
+	ps = push
+	o = checkout
+	b = branch
+	l = log
+	c = commit
+	f = fetch
+	r = rebase
+	d = diff
+	save = !git add --all . && git commit -m "Save" --no-verify
+	undo = "!f() { git reset HEAD~$1; }; f"
+

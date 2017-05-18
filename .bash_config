@@ -1,0 +1,28 @@
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.bash_aliases
+fi
+
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
+if [ -d ~/bin ]; then
+  export PATH=$PATH:~/bin
+fi
+
+export GITAWAREPROMPT=~/dotfiles/git-aware-prompt
+if [ -f ~/git-aware-prompt.sh ]; then
+  . ~/git-aware-prompt.sh
+fi
+
+# Make bash completion work with git alias `g`
+__git_complete g __git_main
+
+xset r rate 180 30
+
+eval `keychain --eval id_rsa`
+
+export EDITOR=vim
+
+# 2 columns tab width
+tabs -2
