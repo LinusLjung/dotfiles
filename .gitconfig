@@ -6,7 +6,8 @@
 	pl = pull --rebase
 	ps = push
 	o = checkout
-	b = branch
+	b = "!f() { if hash branches 2>/dev/null; then branches; else git br; fi }; f"
+	br = branch -vv
 	l = log
 	c = commit
 	f = fetch
