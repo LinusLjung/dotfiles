@@ -5,9 +5,9 @@
 	a = add
 	pl = pull --rebase
 	ps = push
-	o = checkout
-	b = "!f() { if hash branches 2>/dev/null; then branches; else git br; fi }; f"
-	br = branch -vv
+	o = "!f() { if [ $# -eq 0 ]; then git br; else git checkout $@; fi }; f"
+	br = "!f() { if hash branches 2>/dev/null; then branches; else git br; fi }; f"
+	b = branch -vv
 	l = log
 	c = commit
 	f = fetch
