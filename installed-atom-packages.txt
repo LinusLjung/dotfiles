@@ -18,6 +18,4 @@ linter-eslint@8.3.2
 linter-ui-default@1.6.10
 relative-numbers@0.8.0
 snow-dark-material-syntax@0.1.1
-vim-mode@0.66.0
 vim-mode-plus@1.9.1
-
