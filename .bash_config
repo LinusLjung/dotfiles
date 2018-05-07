@@ -20,7 +20,7 @@ __git_complete g __git_main
 
 xset r rate 180 30
 
-eval `keychain --eval id_rsa`
+# eval `keychain --eval id_rsa`
 
 export EDITOR=vim
 
