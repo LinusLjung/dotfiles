@@ -7,11 +7,12 @@
 	ps = push
 	o = checkout
 	b = branch -vv
-	l = log
+	l = log --format=\"%Cred%h %Creset%an %Cblue%d%n%Cgreen%ad, %ar%Creset%n%s%n\" --graph
 	c = commit
 	f = fetch
 	r = rebase
+	rs = reset
 	d = diff
 	save = !git add --all . && git commit -m "Save" --no-verify
 	undo = "!f() { git reset HEAD~$1; }; f"
-
+	prune-local = !git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -D
