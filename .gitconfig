@@ -18,3 +18,5 @@
 	save = !git add --all . && git commit -m "Save" --no-verify
 	undo = "!f() { git reset HEAD~$1; }; f"
 	prune-local = !git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -D
+[init]
+	defaultBranch = main
