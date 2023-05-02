@@ -18,5 +18,6 @@
 	save = !git add --all . && git commit -m "Save" --no-verify
 	undo = "!f() { git reset HEAD~$1; }; f"
 	prune-local = !git fetch -p && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -D
+	absorb = !~/git-absorb/git-absorb.exe
 [init]
 	defaultBranch = main
