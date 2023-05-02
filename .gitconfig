@@ -21,3 +21,7 @@
 	absorb = !~/git-absorb/git-absorb.exe
 [init]
 	defaultBranch = main
+[core]
+	pager = diff-so-fancy | less --tabs=2 -RFX
+[interactive]
+	diffFilter = diff-so-fancy --patch
